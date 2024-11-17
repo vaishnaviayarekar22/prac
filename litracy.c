@@ -2,11 +2,12 @@
 int main()
 {
     int total,men,women,litrate_men,litrate_women,illitrate_men,illitrate_women,litracy;
+
     total=80000;
-    men=(80000*52)/100;
-    women=80000-men;
-    litrate_men=(35*80000)/100;
-    litracy=(80000*48)/100;
+    men=(total*52)/100;
+    women=total-men;
+    litrate_men=(35*total)/100;
+    litracy=(total*48)/100;
     litrate_women=litracy-litrate_men;
     illitrate_men=men-litrate_men;
     illitrate_women=women-litrate_women;
